@@ -1,0 +1,27 @@
+<head>
+  <title>Break The Cycle</title>
+  <
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Break The Cycle</h1>
+    </header>
+    <nav>
+      {{> navigation}}
+    </nav>
+
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+<template name="navigation">
+  <ul>
+    <li>{{text}}</li>
+  </ul>
+</template>
